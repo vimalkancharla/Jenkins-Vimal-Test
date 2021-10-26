@@ -1,0 +1,437 @@
+{
+	"variables": [],
+	"info": {
+		"name": "backend calls",
+		"_postman_id": "495e0435-2636-de81-904b-de87f67006fa",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "upload document",
+			"request": {
+				"url": "localhost:8080/api/documents/v1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Y29sbC11c2VyOmwsRUQhQnE2UmVuWHNDOncyUCs3",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "dir.zip"
+						},
+						{
+							"key": "docTitle",
+							"value": "the title of the document",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "author",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "upload document all fields",
+			"request": {
+				"url": "localhost:8080/api/documents/v1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "docTitle",
+							"value": "the title of the document",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "author",
+							"value": "author",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "internal",
+							"value": "true",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "author",
+							"value": "author",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "commissioner",
+							"value": "commissioner",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "geoTags",
+							"value": "geotags",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "tags",
+							"value": "tag 1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "tags",
+							"value": "tag 2",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "locationId",
+							"value": "4",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataCategory",
+							"value": "dataCategory",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "team",
+							"value": "Compliance",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataTheme",
+							"value": "dataTheme",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "lifecycle",
+							"value": "User defined",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "lifecycleUserDefinedMonths",
+							"value": "23",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "division",
+							"value": "Environmental Quality",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "documentContentDateStart",
+							"value": "2021-01-01",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "documentContentDateEnd",
+							"value": "2021-01-02",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "documentPublishDate",
+							"value": "2021-01-03",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "documentSurveyDate",
+							"value": "2021-01-04",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "category",
+							"value": "PERMIT",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "status",
+							"value": "Draft",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "cautionAdvised",
+							"value": "true",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataReviewed",
+							"value": "true",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "confidentiality",
+							"value": "3",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "neims.xml"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update document",
+			"request": {
+				"url": "localhost:8080/api/documents/v1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "docTitle",
+							"value": "the title of the document",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "author",
+							"value": "author",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "internal",
+							"value": "true",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "author",
+							"value": "author",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "commissioner",
+							"value": "commissioner",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "geoTags",
+							"value": "geotags",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "tags",
+							"value": "tag 1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "tags",
+							"value": "tag 2",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "locationId",
+							"value": "4",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataCategory",
+							"value": "dataCategory",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "team",
+							"value": "Compliance",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataTheme",
+							"value": "dataTheme",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "lifecycle",
+							"value": "User defined",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "lifecycleUserDefinedMonths",
+							"value": "23",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "division",
+							"value": "Environmental Quality",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "documentContentDateStart",
+							"value": "2021-01-01",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "documentContentDateEnd",
+							"value": "2021-01-02",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "documentPublishDate",
+							"value": "2021-01-03",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "documentSurveyDate",
+							"value": "2021-01-04",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "category",
+							"value": "PERMIT",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "status",
+							"value": "Draft",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "cautionAdvised",
+							"value": "true",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "dataReviewed",
+							"value": "true",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "confidentiality",
+							"value": "3",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/blaszum/Documents/Normal.docx",
+							"value": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "download file content",
+			"request": {
+				"url": "localhost:8080/api/documents/v1/0a688f96-adcc-4f83-85f0-b2594068b9ba/content",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filedata",
+							"type": "file",
+							"src": "/Users/blaszum/Documents/Normal.docx",
+							"value": ""
+						},
+						{
+							"key": "name",
+							"value": "somefile.txt",
+							"type": "text"
+						},
+						{
+							"key": "nodeType",
+							"value": "cm:content",
+							"type": "text"
+						},
+						{
+							"key": "cm:title",
+							"value": "My text",
+							"type": "text"
+						},
+						{
+							"key": "cm:description",
+							"value": "My text document description",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

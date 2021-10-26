@@ -1,0 +1,18 @@
+server:
+  port: 9947
+  error:
+    include-message: always
+    include-exception: true
+    include-binding-errors: always
+
+# Alfresco
+content:
+  service:
+    url: 193.122.75.56:8080
+    security:
+      basicAuth:
+        username: document-management-service
+        password: cdG96SDp=8+5$n`g
+
+alfrescoDocumentUploadDirectoryId: f6f4acbf-6f30-418e-bee7-29537236942d
+fileSizeUploadLimitMb: 50

@@ -1,0 +1,11 @@
+# Alfresco Server
+content:
+  service:
+    url: localhost:8080
+    security:
+      basicAuth:
+        username: admin
+        password: admin
+
+alfrescoDocumentUploadDirectoryId: -root-
+fileSizeUploadLimitMb: 50
