@@ -1,4 +1,3 @@
 FROM ubuntu 
 RUN apt-get update 
-RUN apt-get install –y nginx 
-CMD [“echo”,”Image created”] 
+COPY /target/original-my-app-1.0-SNAPSHOT.jar	
